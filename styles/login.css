@@ -5,6 +5,11 @@ html {
     font-family: Poppins, sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 h1 {
     font-size: 5em;
     color: #a881ec;
@@ -102,8 +107,6 @@ a:hover {
 @media (max-width: 500px) {
     html {
         font-size: 14px;
-        overflow-x: hidden;
-        overflow-y: hidden;
     }
     form {
         width: 65%;
