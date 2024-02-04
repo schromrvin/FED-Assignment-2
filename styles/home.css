@@ -1,0 +1,230 @@
+html {
+    background-color: #030C15;
+    color: #E2EFFB;
+    overflow-x: hidden;
+}
+
+div {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.username {
+    margin-top: 0;
+    font-size: 50px;
+    color: #a881ec;
+}
+
+.user {
+    font-family: "Gotham Header", sans-serif;
+}
+
+.user-stats {
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    margin-left: 0px;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(168, 129, 236, 0.8);
+    box-shadow: 0px 0px 100px 0px rgba(168, 129, 236, 0.8);
+    border-radius: 30px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.user-stats img {
+    border-radius: 100px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 1);
+}
+
+.user-stats div h3 {
+    margin-bottom: 10px;
+}
+
+.number {
+    margin-top: 0px;
+    color: #89C2EF;
+}
+
+.guess-the-song {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.guess-the-song div {
+    box-sizing: border-box;
+    padding: 1px;
+    background-color: #421494;
+    color: #dac4fff8;
+    border-radius: 20px;
+    width: 100%;
+    font-family: "Gotham Header", sans-serif;
+}
+
+.guess-the-song div h2 {
+    margin-bottom: 0px;
+}
+
+.guess-the-song div h3 {
+    margin-top: 0px;
+}
+
+.guess-the-song p {
+    font-family: "Poppins", sans-serif;
+}
+
+.guess-the-song a {
+    text-decoration: none;
+    color: #E2EFFB;
+}
+
+.guess-the-song button {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin: 0px auto;
+    width: 60%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #a881ec;
+    border: none;
+    color: #E2EFFB;
+    box-shadow: 0px 4px 0px rgb(0, 0, 0, 1);
+    transition: all 0.3s ease;
+    font-family: "Gotham Header", sans-serif;
+}
+
+.guess-the-song button:hover {
+    background-color: #A528E1;
+    box-shadow: none;
+    transform: translate(0px, 4px);
+}
+
+.flappy-artists {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.flappy-artists h2 {
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #421494;
+    color: #dac4fff8;
+    border-radius: 20px;
+    width: 100%;
+    font-family: "Gotham Header", sans-serif;
+}
+
+.flappy-artists p {
+    font-family: "Poppins", sans-serif;
+}
+
+.flappy-artists a {
+    text-decoration: none;
+    color: #E2EFFB;
+}
+
+.flappy-artists button {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin: 0px auto;
+    width: 60%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #a881ec;
+    border: none;
+    color: #E2EFFB;
+    box-shadow: 0px 4px 0px rgb(0, 0, 0, 1);
+    transition: all 0.3s ease;
+    font-family: "Gotham Header", sans-serif;
+}
+
+.flappy-artists button:hover {
+    background-color: #A528E1;
+    box-shadow: none;
+    transform: translate(0px, 4px);
+}
+
+.flappy-artists .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 100);
+    border-radius: 20px;
+}
+
+.flappy-artists .overlay h3 {
+    position: absolute;
+    margin: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Gotham Header", sans-serif;
+    color: #030C15;
+    background-color: yellow;
+    padding: 10px 40px;
+    border-radius: 50px;
+    width: 50%;
+    font-size: 25px;
+}
+
+.other-menus {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.other-menus a {
+    box-sizing: border-box;
+    padding: 15px;
+    text-decoration: none;
+    color: #d3b8ff;
+    background-color: rgba(93, 0, 255, 0.8);
+    box-shadow: 0px 4px 0px rgb(0, 0, 0, 1);
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Gotham Header", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.other-menus a:hover {
+    background-color: #A528E1;
+    box-shadow: none;
+    transform: translate(0px, 4px);
+}
+
+.animation-center {
+    position: absolute;
+    transform: translate(-400%, -58%);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* MEDIA QUERIES
+--------------------------------*/
+@media (max-width: 500px) {
+    div {
+        width: 80%;
+    }
+    .other-menus a img {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .other-menus a {
+        padding: 3.3vw;
+        font-size: 3vw;
+    }
+}
