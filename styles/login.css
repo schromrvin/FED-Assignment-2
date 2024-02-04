@@ -1,13 +1,6 @@
-/* TITLE
---------------------------------*/
 html {
     background-color: #030C15;
     font-family: Poppins, sans-serif;
-}
-
-body {
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 h1 {
@@ -42,7 +35,7 @@ form {
 }
 
 p {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     color: #E2EFFB;
 }
