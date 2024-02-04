@@ -30,3 +30,5 @@ Icons
 https://www.iconfinder.com/search/icons?family=font-awesome-regular
 https://www.iconfinder.com/icons/103635/music_accept_icon
 https://www.iconfinder.com/icons/326700/cart_shopping_icon
+
+https://necolas.github.io/normalize.css/

@@ -1,0 +1,97 @@
+/* TITLE
+--------------------------------*/
+html {
+    background-color: #030C15;
+    font-family: Poppins, sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+    color: #a881ec;
+    text-align: center;
+    font-family: "Gotham Header", sans-serif;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: #89C2EF;
+    text-align: center;
+    font-family: "Gotham Text", sans-serif;
+    margin-bottom: 40px;
+}
+
+form {
+    width: 350px;
+    padding: 40px;
+    background-color: rgba(66, 20, 148, 0.89);
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E2EFFB;
+}
+
+p {
+    margin-top: 100px;
+    text-align: center;
+    color: #E2EFFB;
+}
+
+form p {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+form button {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin: 0px auto;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #a881ec;
+    color: #E2EFFB;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 1);
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #A528E1;
+    box-shadow: none;
+    transform: translate(0px, 4px);
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+a {
+    color: #89C2EF;
+}
+
+a:hover {
+    color: #a881ec;
+}
+
+.animation-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.5;
+}

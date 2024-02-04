@@ -6,9 +6,35 @@
     <title>Tunify - A Song Game | Login</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/login.css">
     <script src="scripts/script.js"></script>
 </head>
 <body>
+    <h1>Tunify</h1>
+    <h2>Where music meets discovery!</h2>
+    <div class="animation-center">
+        <div style="display:block;">
+            <dotlottie-player src="https://lottie.host/4e42721e-22cb-4189-a5f9-7fb1e5f4b310/8yfD6JfR2J.json" background="transparent" speed="1" style="width: 700px; height: 700px;" loop autoplay></dotlottie-player>
+        </div>
+    </div>
+    <div class="form-container">
+        <form action="home.html" method="post">
+            <label for="username">Username</label>
+            <input class="input-box" id="username" type="text" name="username" placeholder="Username" required>
+            
+            <label for="password">Password</label>
+            <input class="input-box" id="password" type="password" name="password" placeholder="Password" required>
+            <p><a href="#">Forgot your password?</a></p>
     
+            <button type="submit">
+                LOGIN ➡️
+            </button>
+        </form>
+    </div>
+    <p>
+        Don't have an account? <br>
+        <a href="#">Sign up</a> or play as a <a href="home.html">Guest</a>!
+    </p>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </body>
 </html>
