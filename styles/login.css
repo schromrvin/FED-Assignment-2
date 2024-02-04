@@ -95,3 +95,16 @@ a:hover {
     z-index: -1;
     opacity: 0.5;
 }
+
+/* MEDIA QUERIES
+--------------------------------*/
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    form {
+        width: 65%;
+        padding: 20px;
+    }
+}
