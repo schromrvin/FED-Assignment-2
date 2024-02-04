@@ -1,6 +1,9 @@
 html {
     background-color: #030C15;
     color: #E2EFFB;
+}
+
+body, html {
     overflow-x: hidden;
 }
 
