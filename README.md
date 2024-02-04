@@ -3,7 +3,7 @@ Pair 6
 
 Fonts
 Headers / Sub-Headers:
-Gabriela
+Gotham
 Text:
 Poppins
 Type Scale:
@@ -11,14 +11,22 @@ Type Scale:
 
 Colors
 Text:
-#210A03
+#E2EFFB
 Background:
-#FEF5F2
+#030C15
 Primary:
-#EB5F24
+#89C2EF
 Secondary:
-#F3D678
+#421494
 Accent:
-#EEE84B
+#A528E1
 
-https://www.realtimecolors.com/?colors=210a03-fef4f1-eb5f24-f3d677-eee949&fonts=Gabriela-Poppins
+https://www.realtimecolors.com/?colors=e2effb-030c15-89c2ef-421494-a528e1&fonts=Gotham-Poppins
+
+Credits
+Spotify Font (Gotham)
+https://www.dafontfree.co/spotify-font/
+Icons
+https://www.iconfinder.com/search/icons?family=font-awesome-regular
+https://www.iconfinder.com/icons/103635/music_accept_icon
+https://www.iconfinder.com/icons/326700/cart_shopping_icon
