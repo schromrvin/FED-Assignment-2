@@ -3,7 +3,6 @@
 html {
     background-color: #030C15;
     font-family: Poppins, sans-serif;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -90,7 +89,7 @@ a:hover {
 }
 
 .animation-center {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
