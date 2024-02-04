@@ -102,6 +102,8 @@ a:hover {
 @media (max-width: 500px) {
     html {
         font-size: 14px;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
     form {
         width: 65%;
