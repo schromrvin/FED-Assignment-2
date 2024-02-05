@@ -196,6 +196,7 @@ div {
     text-align: center;
     font-family: "Gotham Header", sans-serif;
     transition: all 0.3s ease;
+    border: none;
 }
 
 .other-menus a:hover {
@@ -209,6 +210,7 @@ div {
     transform: translate(-400%, -58%);
     z-index: -1;
     opacity: 0.5;
+    filter: blur(70px);
 }
 
 /* MEDIA QUERIES
