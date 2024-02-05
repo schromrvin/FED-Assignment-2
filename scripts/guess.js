@@ -124,6 +124,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     buttons.forEach(function(button) {
         button.addEventListener('click', function() {
+            buttons.forEach(function(btn) {
+                if (btn !== button && btn.classList.contains('selected')) {
+                    btn.classList.remove('selected');
+                    btn.querySelector('.overlay').classList.remove('selected');
+                }
+            });
+
             var overlay = this.querySelector('.overlay');
             this.classList.toggle('selected');
             overlay.classList.toggle('selected');
