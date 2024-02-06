@@ -107,6 +107,10 @@ html {
     transform: translate(0px, 4px);
 }
 
+.feedback{
+    color: white;
+}
+
 .answer {
     display: flex;
     justify-content: space-around;
