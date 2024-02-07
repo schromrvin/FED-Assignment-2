@@ -35,7 +35,7 @@ With the website being a work in progress, you might come across minor bugs and 
 - "Guess The Song" Results Page (Front-end)
 - Leaderboard Page (Front-end & Back-end)
 - Merch Store Page (Front-end & Back-end)
-- *"Flappy Artists" Gamemode (Front-end & Back-end)
+- **"Flappy Artists" Gamemode (Front-end & Back-end)**
 <br>
 
 > Last updated on 7/2/2024
