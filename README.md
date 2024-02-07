@@ -1,10 +1,10 @@
-# Tunify
+# 🎵 Tunify 🎵
 
 Hello, thank you for your interest in Tunify, the music guessing game where you can discover new tunes and test your musical skills. We are happy to have you here and we hope you enjoy playing our game. As you play, you can earn points and rank up on our leaderboard, or even redeem our exclusive merch drops when they are available. Don’t miss this chance to have fun and show off your music knowledge. Stay tuned and rock on! 🎸
 
 ## Design Process
 
-Hi there, welcome to Tunify, the ultimate music guessing game where you can explore new songs and challenge your musical knowledge. We are Marvin ([@s10260527](https://github.com/s10260527)) and Lucas ([@LoocasToh](https://github.com/LoocasToh)), two web developers who love music and want to share our passion with you. We created this game to have you discover music you might have never heard before in a fun and interactive way! Are you ready to have some fun? 🎵
+Hi there, welcome to Tunify, the ultimate music guessing game where you can explore new songs and challenge your musical knowledge. We are Marvin ([@s10260527](https://github.com/s10260527)) and Lucas ([@LoocasToh](https://github.com/LoocasToh)), two web developers who love music and want to share our passion with you. We created this game to have you discover music you might have never heard before in a fun and interactive way! Are you ready to have some fun? 🎧
 
 Our website is very easy to use and navigate. Once you log in, you will see your points and your daily streak on the top of the page. You can use your points to redeem exclusive merch from our store, which is updated regularly with new items. Don’t miss this opportunity to get some cool stuff!
 
