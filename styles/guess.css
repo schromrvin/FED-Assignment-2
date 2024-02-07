@@ -51,10 +51,10 @@ html {
     width: 400px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.options {
+.results {
     display: flex;
     justify-content: space-around;
     width: 80%;
@@ -65,53 +65,26 @@ html {
     margin-bottom: 30px;
 }
 
-.options button {
+.rightOrwrong {
     padding: 15px;
     border-radius: 10px;
-    background-color: rgba(93, 0, 255, 0.8);
-    box-shadow: 0px 4px 0px rgb(0, 0, 0, 1);
-    border: none;
-    transition: all 0.3s ease;
+    background-color: rgb(0, 210, 106, 0.8);
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 1);
 }
 
-.options button:hover, .options button.playing {
-    background-color: #A528E1;
-    box-shadow: none;
-    transform: translate(0px, 4px);
-}
-
-.options img {
+.rightOrwrong img {
     width: 35px;
     height: 35px;
 }
 
-.next-round {
-    display: none;
+#audioPlayerContainer {
     margin: 0 auto;
-    font-weight: bolder;
-    width: 240px;
-    border-radius: 5px;
-    height: 40px;
-    background-color: #a881ec;
-    border: none;
-    color: #E2EFFB;
-    box-shadow: 0px 4px 0px rgb(0, 0, 0, 1);
-    transition: all 0.3s ease;
-    font-family: "Gotham Header", sans-serif;
+    text-align: center;
+    width: 80%;
     margin-bottom: 30px;
 }
 
-.next-round:hover {
-    background-color: #A528E1;
-    box-shadow: none;
-    transform: translate(0px, 4px);
-}
-
-.feedback{
-    color: white;
-}
-
-.answer {
+#options {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -122,14 +95,7 @@ html {
     row-gap: 19px;
 }
 
-.answer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.answer button {
+#options button {
     border: none;
     position: relative;
     padding: 0px;
@@ -140,63 +106,93 @@ html {
     transition: all 0.3s ease;
 }
 
-.answer button:hover, .answer button.selected {
-    box-shadow: none;
-    transform: translate(0px, 4px);
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    width: 101%;
-    height: 101%;
-    border-radius: 9px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-    color: #E2EFFB;
-}
-
-.overlay:hover, .overlay.selected {
+.cover-image img {
     width: 100%;
     height: 100%;
-    top: -4px;
-    left: -4px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#options button:hover, #options button.clicked {
     box-shadow: none;
-    border: 4px solid #A528E1;
-    border-radius: 14px;
-}
-
-.overlay h3 {
-    font-family: "Gotham Header", sans-serif;
-    margin: 0;
-    margin-top: 120px;
-}
-
-.overlay h5 {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-}
-
-.submit {
-    display: block;
-    margin: 0 auto;
-    font-weight: bolder;
-    width: 240px;
-    border-radius: 5px;
-    height: 40px;
-    background-color: #a881ec;
-    border: none;
-    color: #E2EFFB;
-    box-shadow: 0px 4px 0px rgb(0, 0, 0, 1);
-    transition: all 0.3s ease;
-    font-family: "Gotham Header", sans-serif;
-    margin-bottom: 30px;
-}
-
-.submit:hover {
-    background-color: #A528E1;
-    box-shadow: none;
+    outline: 4px solid #A528E1;
     transform: translate(0px, 4px);
 }
+
+#options button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  }
+
+  .track-title {
+    position: absolute;
+    font-family: "Gotham Header", sans-serif;
+    color: #E2EFFB;
+    z-index: 1;
+    margin-top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.17em;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .track-artist {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    z-index: 1;
+    margin-top: -33px;
+    color: #E2EFFB;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.83em;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  button.disabled {
+    pointer-events: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#feedback {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .animation-center {
     position: fixed;
@@ -206,26 +202,4 @@ html {
     z-index: -1;
     opacity: 0.5;
     filter: blur(40px);
-}
-
-/* MEDIA QUERIES
---------------------------------*/
-@media (max-width: 500px) {
-    .answer button {
-        width: 130px;
-        height: 130px;
-    }
-
-    .overlay h3 {
-        margin-top: 85px;
-        font-size: 17px;
-    }
-
-    .overlay h5 {
-        font-size: 12px;
-    }
-
-    .level {
-        width: 80%;
-    }
 }
