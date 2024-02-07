@@ -1,0 +1,91 @@
+html {
+    background-color: #030C15;
+}
+
+.header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Gotham Header", sans-serif;
+}
+
+.header h1 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    color: #a881ec;
+    font-size: 50px;
+}
+
+.title {
+    box-sizing: border-box;
+    padding: 1px;
+    background-color: #421494;
+    color: #dac4fff8;
+    border-radius: 20px;
+    font-family: "Gotham Header", sans-serif;
+    width: 400px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#results {
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.copy, .back-btn button{
+    display: block;
+    margin: 0 auto;
+    font-weight: bolder;
+    width: 270px;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #a881ec;
+    border: none;
+    color: #E2EFFB;
+    box-shadow: 0px 4px 0px rgb(0, 0, 0, 1);
+    transition: all 0.3s ease;
+    font-family: "Gotham Header", sans-serif;
+    margin-bottom: 30px;
+}
+
+.copy:hover, .back-btn button:hover{
+    background-color: #A528E1;
+    box-shadow: none;
+    transform: translate(0px, 4px);
+}
+
+.back-btn, .back-btn button {
+    text-decoration: none;
+    width: 200px;
+}
+
+#date, #score {
+    font-family: "Gotham Header", sans-serif;
+    color: #E2EFFB;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#date h2, #score h2{
+    margin-bottom: 10px;
+}
+
+#date h3, #score h3 {
+    margin-top: 0px;
+}
+
+#score {
+    margin-bottom: 30px;
+}
