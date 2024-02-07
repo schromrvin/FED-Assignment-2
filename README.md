@@ -1,6 +1,6 @@
 # 🎵 Tunify 🎵
 
-Hello, thank you for your interest in Tunify, the music guessing game where you can discover new tunes and test your musical skills. We are happy to have you here and we hope you enjoy playing our game. As you play, you can earn points and rank up on our leaderboard, or even redeem our exclusive merch drops when they are available. Don’t miss this chance to have fun and show off your music knowledge. Stay tuned and rock on! 🎸
+Hello, thank you for your interest in **Tunify**, the music guessing game where you can discover new tunes and test your musical skills. We are happy to have you here and we hope you enjoy playing our game. As you play, you can earn points and rank up on our leaderboard, or even redeem our exclusive merch drops when they are available. Don’t miss this chance to have fun and show off your music knowledge. Stay tuned and rock on! 🎸
 
 ## Design Process
 
