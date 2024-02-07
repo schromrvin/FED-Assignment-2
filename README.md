@@ -65,7 +65,7 @@ Here are some of the materials used in the development of the website.
 - [Spellcheck](https://spellcheck.xyz/) (By [***@sabrina-api***](https://github.com/sabrina-aip) on [GitHub](https://github.com/sabrina-aip/spellcheck/tree/main))
 
 ### Content
-- Website Front-end (By ***Marvin*** - [@s10260527](https://github.com/s10260527))
-- Website Back-end (By ***Lucas*** - [@LoocasToh](https://github.com/LoocasToh))
+- Website Front-end (By ***Marvin - [@s10260527]***(https://github.com/s10260527))
+- Website Back-end (By ***Lucas - [@LoocasToh]***(https://github.com/LoocasToh))
 - Website Theme Visualizer ([***Realtime Colors***](https://www.realtimecolors.com/?colors=e2effb-030c15-89c2ef-421494-a528e1&fonts=Gotham-Poppins))
 - Icons ([***IconFinder***](https://www.iconfinder.com/))
