@@ -1,13 +1,15 @@
 // Replace these values with your actual Spotify API credentials
 const clientId = '4adfe3f7169a4ac0a892439ea002f811';
 const clientSecret = '306c8c2bb0144ac28e1c2e1fa4b0d7f6';
-const playlistId = '37i9dQZF1DWVlLVXKTOAYa';
+const playlistId = '3dbBF7CHMUwehGOwtdr2UY';
 const clientSecretBase64 = btoa(`${clientId}:${clientSecret}`);
 
 let accessToken;
 let currentTracks;
-let roundsPlayed = 0;
+let questionsPlayed = 0;
+let levelsPlayed = 0;
 let correctGuesses = 0;
+let roundResults = '';
 
 // Authenticate with Spotify API
 function authenticate() {
@@ -39,7 +41,17 @@ function getPlaylistTracks(accessToken) {
 function displayTracksWithGame(tracks) {
   currentTracks = tracks;
   const playlist = $('#options');
-  const randomIndex = Math.floor(Math.random() * tracks.length); // Choose a random track
+  let randomIndex;
+
+  // Select a random track based on the current level
+  if (levelsPlayed == 0) { // Easy level
+    randomIndex = Math.floor(Math.random() * 11);
+  } else if (levelsPlayed == 1) { // Medium level
+    randomIndex = Math.floor(Math.random() * 15) + 11;
+  } else if (levelsPlayed == 2) { // Hard level
+    randomIndex = Math.floor(Math.random() * 25) + 26;
+  }
+
   const randomTrack = tracks[randomIndex].track;
 
   // Fetch additional details of the selected track including album details
@@ -83,20 +95,41 @@ function displayTracksWithGame(tracks) {
       // Display album cover along with audio player
       $('#audioPlayerContainer').html(audioPlayer);
       $('#albumCover').attr('src', albumCoverUrl); // Set the album cover image source
-
+      $('.next-round').css('display', 'none');
+      $('#feedback').css('display', 'none');
+      $('#correctAnswer').css('display', 'none');
       // Display track options
       playlist.empty();
       incorrectTitles.forEach(option => {
         const button = $('<button>').addClass('option-button').click(function() {
           $(this).addClass('clicked');
           $('.option-button').prop('disabled', true).addClass('disabled');
+          $('#feedback').css('display', 'block');
+          $('.next-round').css('display', 'block');
           if (option.title === correctTitle) { // Change this line
-            $('#feedback').html('Correct! You guessed the right title: ' + correctTitle + ' by ' + correctArtist);
+            $('#feedback').html('Correct!');
+            $(this).css('outline', '4px solid #00D26A');
+            $('#feedback').css('background-color', '#00D26A');
+            roundResults += '🟩';
             correctGuesses++;
           } else {
-            $('#feedback').html('Incorrect! The correct title is: ' + correctTitle + ' by ' + correctArtist);
+            $('#correctAnswer').css('display', 'block');
+            $('#feedback').html('Incorrect!');
+            $(this).css('outline', '4px solid #F8312F');
+            $('#feedback').css('background-color', '#F8312F');
+            roundResults += '🟥';
+            $('.option-button').each(function() {
+              if ($(this).find('.track-title').text() === correctTitle) {
+                $(this).addClass('clicked');
+                $(this).css('outline', '4px solid #00D26A');
+              }
+            });
+            $('#correctTitle').html(correctTitle);
+            $('#correctArtist').html('By ' + correctArtist);
           }
-          $('#nextButton').show();
+          $('html, body').animate({
+            scrollTop: $('#feedback').offset().top
+          }, 1000);
           $(this).off('click');
         });
       
@@ -113,18 +146,25 @@ function displayTracksWithGame(tracks) {
 
 // Start a new game
 function newGame() {
-  roundsPlayed++;
-  $('#feedback').empty();
-  $('#nextButton').hide();
+  questionsPlayed++;
   // Enable all buttons
   $('.option-button').prop('disabled', false).removeClass('disabled');
-  if (roundsPlayed < 5) {
+  if (questionsPlayed < 5) {
+    if (levelsPlayed == 0){
+      $('.level h2').text('Level One: Easy');
+    } else if (levelsPlayed == 1) {
+      $('.level h2').text('Level Two: Medium');
+    } else if (levelsPlayed == 2) {
+      $('.level h2').text('Level Three: Hard');
+    }
     displayTracksWithGame(currentTracks);
   } else {
-    // Display total score
-    $('#options').empty();
-    $('#audioPlayerContainer').empty();
-    $('#feedback').html('Game Over! Total Score: ' + correctGuesses + '/5');
+    roundResults += '\n';
+    questionsPlayed = 0;
+    levelsPlayed++;
+  }
+  if (levelsPlayed == 3) {
+    window.location.href = 'home.html';
   }
 }
 
@@ -132,6 +172,7 @@ $(document).ready(function() {
   authenticate().then(response => {
     accessToken = response.access_token;
     getPlaylistTracks(accessToken).then(response => {
+      $('.level h2').text('Level One: Easy');
       displayTracksWithGame(response.items); // Display playlist tracks with guessing game
     });
   });

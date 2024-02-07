@@ -68,7 +68,7 @@ html {
 .rightOrwrong {
     padding: 15px;
     border-radius: 10px;
-    background-color: rgb(0, 210, 106, 0.8);
+    background-color: rgb(165, 40, 225, 0.8);
     box-shadow: 0px 1px 10px rgb(0, 0, 0, 1);
 }
 
@@ -90,6 +90,7 @@ html {
     flex-wrap: wrap;
     width: 80%;
     gap: 10px;
+    padding: 0;
     margin: 0 auto;
     margin-bottom: 30px;
     row-gap: 19px;
@@ -128,9 +129,9 @@ html {
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-  }
+}
 
-  .track-title {
+.track-title {
     position: absolute;
     font-family: "Gotham Header", sans-serif;
     color: #E2EFFB;
@@ -143,9 +144,9 @@ html {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
+}
 
-  .track-artist {
+.track-artist {
     position: absolute;
     font-family: "Poppins", sans-serif;
     z-index: 1;
@@ -158,30 +159,68 @@ html {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  button.disabled {
-    pointer-events: none;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#feedback {
-    color: white;
 }
 
+button.disabled {
+    pointer-events: none;
+}
+
+#feedback {
+    font-family: "Gotham Header", sans-serif;
+    width: 200px;
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 100px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 1);
+    font-weight: bold;
+    color: #E2EFFB;
+    margin-bottom: 20px;
+}
+
+#correctAnswer {
+    font-family: "Gotham Header", sans-serif;
+    color: #E2EFFB;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+#correctTitle {
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#correctArtist {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.next-round {
+    display: block;
+    margin: 0 auto;
+    font-weight: bolder;
+    width: 240px;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #a881ec;
+    border: none;
+    color: #E2EFFB;
+    box-shadow: 0px 4px 0px rgb(0, 0, 0, 1);
+    transition: all 0.3s ease;
+    font-family: "Gotham Header", sans-serif;
+    margin-bottom: 30px;
+}
+
+.next-round:hover {
+    background-color: #A528E1;
+    box-shadow: none;
+    transform: translate(0px, 4px);
+}
 
 
 
