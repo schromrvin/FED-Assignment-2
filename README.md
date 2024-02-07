@@ -25,14 +25,14 @@ With the website being a work in progress, you might come across minor bugs and 
 ### Existing Features
 - Login Page (Front-end)
 - Home Page (Front-end)
-- "Guess The Song" Gamemode (Front-end)
+- Spotify API Implementation
+- "Guess The Song" Gamemode (Front-end & Back-end)
+- "Guess The Song" Results Page (Front-end & Back-end)
 - Somewhat Responsive Website
 - Minor JavaScript Implementation (Hover Animations etc.)
 
 ### Features to Implement
 - Database Accounts API Implementation (Back-end)
-- Spotify API Implementation (Back-end)
-- "Guess The Song" Results Page (Front-end)
 - Leaderboard Page (Front-end & Back-end)
 - Merch Store Page (Front-end & Back-end)
 - **"Flappy Artists" Gamemode (Front-end & Back-end)**
@@ -69,10 +69,10 @@ Here are some of the materials used in the development of the website.
 - Login Page (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
 - Home Page (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 - Home Page (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
-- Guess The Song (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
-- Guess The Song (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527)) 
-- Guess The Song Results (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
-- Guess The Song Results (Back-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- "Guess The Song" Gamemode (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- "Guess The Song" Gamemode (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527)) 
+- "Guess The Song" Results (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- "Guess The Song" Results (Back-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 
 ### Others
 - Point Calculations (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
