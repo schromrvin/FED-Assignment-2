@@ -10,7 +10,7 @@ Our website is very easy to use and navigate. Once you log in, you will see your
 
 You can choose from two exciting game modes: “Guess The Song” and “Flappy Artists”. In “Guess The Song”, you will listen to a short clip of a song and try to guess its title and artist. How many songs can you recognize? 🔎
 
-**(Currently in development)**
+**🚧 Currently in development 🚧**
 <br>
 In “Flappy Artists”, you will play a classic arcade game with a musical twist. You will control a bird that flies through pipes while listening to a song. After a while, you will have to guess the artist of the song before you can continue. How far can you go? 🐦
 
