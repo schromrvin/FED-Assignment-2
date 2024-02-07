@@ -73,7 +73,11 @@ Here are some of the materials used in the development of the website.
 - Guess The Song (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527)) 
 - Guess The Song Results (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 - Guess The Song Results (Back-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+
+### Others
 - Point Calculations (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- README Write-up (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- Wireframe (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 
 ## References
 
