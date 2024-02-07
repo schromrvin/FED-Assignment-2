@@ -1,7 +1,7 @@
 // Replace these values with your actual Spotify API credentials
 const clientId = '4adfe3f7169a4ac0a892439ea002f811';
 const clientSecret = '306c8c2bb0144ac28e1c2e1fa4b0d7f6';
-const playlistId = '37i9dQZEVXbK4gjvS1FjPY';
+const playlistId = '3dbBF7CHMUwehGOwtdr2UY';
 const clientSecretBase64 = btoa(`${clientId}:${clientSecret}`);
 
 let accessToken;
@@ -193,12 +193,33 @@ $(document).ready(function() {
     newGame();
     if (levelsPlayed == 0){
       $('.level h2').text('Level One: Easy');
+      if (questionsPlayed == 4) {
+        $('#nextButton').css('display', 'none');
+        $('#nextButton').text('Go Next Level ☝️');
+      }
+      else {
+        $('#nextButton').css('display', 'none');
+        $('#nextButton').text('Next Tune 🎵');
+      }
     } else if (levelsPlayed == 1) {
       $('.level h2').text('Level Two: Medium');
+      if (questionsPlayed == 4) {
+        $('#nextButton').css('display', 'none');
+        $('#nextButton').text('Go Next Level ☝️');
+      }
+      else {
+        $('#nextButton').css('display', 'none');
+        $('#nextButton').text('Next Tune 🎵');
+      }
     } else if (levelsPlayed == 2) {
       $('.level h2').text('Level Three: Hard');
       if (questionsPlayed == 4) {
+        $('#nextButton').css('display', 'none');
         $('#nextButton').text('Go To Results 📄');
+      }
+      else {
+        $('#nextButton').css('display', 'none');
+        $('#nextButton').text('Next Tune 🎵');
       }
     }
     else if (levelsPlayed == 3) {
