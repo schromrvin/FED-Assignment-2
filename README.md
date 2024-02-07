@@ -37,6 +37,7 @@ With the website being a work in progress, you might come across minor bugs and 
 - Merch Store Page (Front-end & Back-end)
 - *"Flappy Artists" Gamemode (Front-end & Back-end)
 <br>
+
 > Last updated on 7/2/2024
 
 ### Possible Features
@@ -53,6 +54,7 @@ Here are some of the materials used in the development of the website.
     - JavaScript (JS)
 2. [Normalize.css](https://necolas.github.io/normalize.css/) - HTML5 CSS Resets
 <br>
+
 > [!NOTE]
 > [Microsoft Copilot AI Chatbot](https://copilot.microsoft.com/) was used in some instances to help with code development and testing.
 
