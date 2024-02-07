@@ -24,28 +24,33 @@
         <h1>Tunify</h1>
     </div>
     <div class="level">
-        <h2>Level One: Easy</h2>
+        <h2></h2>
     </div>
     <div class="results">
-        <div class="rightOrwrong">
-            <img src="" alt="">
+        <div class="rightOrwrong" id="tune-0">
+            <img src="/images/guess/play.png" alt="">
         </div>
-        <div class="rightOrwrong">
-            <img src="" alt="">
+        <div class="rightOrwrong" id="tune-1">
+            <img src="/images/guess/play.png" alt="">
         </div>
-        <div class="rightOrwrong">
-            <img src="" alt="">
+        <div class="rightOrwrong" id="tune-2">
+            <img src="/images/guess/play.png" alt="">
         </div>
-        <div class="rightOrwrong">
-            <img src="" alt="">
+        <div class="rightOrwrong" id="tune-3">
+            <img src="/images/guess/play.png" alt="">
         </div>
-        <div class="rightOrwrong">
-            <img src="" alt="">
+        <div class="rightOrwrong" id="tune-4">
+            <img src="/images/guess/play.png" alt="">
         </div>
     </div>
     <div id="audioPlayerContainer"></div>
     <ul id="options"></ul>
-    <div id="feedback" class="feedback"></div>
+    <div id="feedback"></div>
+    <div id="correctAnswer">
+        <div>The correct answer was</div>
+        <div id="correctTitle"></div>
+        <div id="correctArtist"></div>
+    </div>
     <button class="next-round" id="nextButton">Go next round ➡️</button>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </body>
