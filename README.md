@@ -27,7 +27,7 @@ With the website being a work in progress, you might come across minor bugs and 
 - Home Page (Front-end)
 - Spotify API Implementation
 - "Guess The Song" Gamemode (Front-end & Back-end)
-- "Guess The Song" Results Page (Front-end & Back-end)
+- "Guess The Song" Results (Front-end & Back-end)
 - Somewhat Responsive Website
 - Minor JavaScript Implementation (Hover Animations etc.)
 
