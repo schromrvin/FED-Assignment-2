@@ -8,12 +8,13 @@ Hi there, welcome to Tunify, the ultimate music guessing game where you can expl
 
 Our website is very easy to use and navigate. Once you log in, you will see your points and your daily streak on the top of the page. You can use your points to redeem exclusive merch from our store, which is updated regularly with new items. Don’t miss this opportunity to get some cool stuff!
 
-You can choose from two exciting game modes: “Guess The Song” and “Flappy Artists”. In “Guess The Song”, you will listen to a short clip of a song and try to guess its title and artist. You will get points for every correct answer and lose points for every wrong one. How many songs can you recognize? 🔎
+You can choose from two exciting game modes: “Guess The Song” and “Flappy Artists”. In “Guess The Song”, you will listen to a short clip of a song and try to guess its title and artist. How many songs can you recognize? 🔎
 
 **(Currently in development)**
+<br>
 In “Flappy Artists”, you will play a classic arcade game with a musical twist. You will control a bird that flies through pipes while listening to a song. After a while, you will have to guess the artist of the song before you can continue. How far can you go? 🐦
 
-You can access both game modes from the homepage and start playing right away. You can also check the leaderboard to see how you rank among other players and compete for the top spot. Will you be the next music champ? 💪
+You can access both game modes from the homepage and start playing right away. You can also check the leaderboard to see how you rank among other players and compete for the top spot. Will you become the next music champ? 💪
 
 For the curious minds out there itching to get a sneak peak at the initial wireframe of the webite, you can find the Adobe XD file (.xd) here: [Initial Website Wireframe]
 
@@ -35,7 +36,7 @@ With the website being a work in progress, you might come across minor bugs and 
 - Leaderboard Page (Front-end & Back-end)
 - Merch Store Page (Front-end & Back-end)
 - *"Flappy Artists" Gamemode (Front-end & Back-end)
-
+<br>
 > Last updated on 7/2/2024
 
 ### Possible Features
@@ -51,7 +52,7 @@ Here are some of the materials used in the development of the website.
     - Cascading Style Sheets (CSS)
     - JavaScript (JS)
 2. [Normalize.css](https://necolas.github.io/normalize.css/) - HTML5 CSS Resets
-
+<br>
 > [!NOTE]
 > [Microsoft Copilot AI Chatbot](https://copilot.microsoft.com/) was used in some instances to help with code development and testing.
 
