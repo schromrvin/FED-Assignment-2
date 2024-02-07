@@ -4,7 +4,7 @@ Hello, thank you for your interest in Tunify, the music guessing game where you 
 
 ## Design Process
 
-Hi there, welcome to Tunify, the ultimate music guessing game where you can explore new songs and challenge your musical knowledge. We are Marvin (@s10260527) and Lucas (@LoocasToh), two web developers who love music and want to share our passion with you. We created this game to connect you with other music lovers and help you discover different cultures and traditions through music. Are you ready to have some fun? 🎵
+Hi there, welcome to Tunify, the ultimate music guessing game where you can explore new songs and challenge your musical knowledge. We are Marvin ([@s10260527](https://github.com/s10260527)) and Lucas ([@LoocasToh](https://github.com/LoocasToh)), two web developers who love music and want to share our passion with you. We created this game to connect you with other music lovers and help you discover different cultures and traditions through music. Are you ready to have some fun? 🎵
 
 Our website is very easy to use and navigate. Once you log in, you will see your points and your daily streak on the top of the page. You can use your points to redeem exclusive merch from our store, which is updated regularly with new items. Don’t miss this opportunity to get some cool stuff!
 
@@ -59,10 +59,10 @@ Here are some of the materials used in the development of the website.
 
 ### Inspiration
 - [SongGuessr](https://songuessr.naithcots.ovh/) (By ***SebLit*** on [Reddit](https://www.reddit.com/r/webdev/comments/15itrf7/showoff_saturday_songguessr_turn_your_spotify/))
-- [Spellcheck](https://spellcheck.xyz/) (By @sabrina-api on [GitHub](https://github.com/sabrina-aip/spellcheck/tree/main))
+- [Spellcheck](https://spellcheck.xyz/) (By [***@sabrina-api***](https://github.com/sabrina-aip) on [GitHub](https://github.com/sabrina-aip/spellcheck/tree/main))
 
 ### Content
-- Website Front-end (By ***Marvin*** - @s10260527)
-- Website Back-end (By ***Lucas*** - @LoocasToh)
+- Website Front-end (By ***Marvin*** - [@s10260527](https://github.com/s10260527))
+- Website Back-end (By ***Lucas*** - [@LoocasToh](https://github.com/LoocasToh))
 - Website Theme Visualizer ([***Realtime Colors***](https://www.realtimecolors.com/?colors=e2effb-030c15-89c2ef-421494-a528e1&fonts=Gotham-Poppins))
 - Icons ([***IconFinder***](https://www.iconfinder.com/))
