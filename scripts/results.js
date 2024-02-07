@@ -5,8 +5,18 @@ window.onload = function() {
     const urlParams = new URLSearchParams(window.location.search);
     let results = urlParams.get('results');
 
-    // Decode the results
-    let decodedResults = results.replace(/A/g, '🟩').replace(/B/g, '🟥');
+    // Split the results into 5 sections
+    let sections = [];
+    for (let i = 0; i < results.length; i += 5) {
+        sections.push(results.slice(i, i + 5));
+    }
+
+    // Decode the sections
+    let decodedSections = sections.map(section => section.replace(/A/g, '🟩').replace(/B/g, '🟥'));
+
+    // Join the decoded sections with '\n' and display them
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.textContent = decodedSections.join('\n');
 
     // Calculate the score
     let score = 0;
@@ -21,10 +31,6 @@ window.onload = function() {
             }
         }
     }
-
-    // Display the decoded results
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.textContent = decodedResults;
 
     // Display the score
     const scoreH3 = document.querySelector('#score h3');
