@@ -16,7 +16,7 @@ In “Flappy Artists”, you will play a classic arcade game with a musical twis
 
 You can access both game modes from the homepage and start playing right away. You can also check the leaderboard to see how you rank among other players and compete for the top spot. Will you become the next music champ? 💪
 
-For the curious minds out there itching to get a sneak peak at the initial wireframe of the webite, you can find the Adobe XD file (.xd) here: [Initial Website Wireframe]
+For the curious minds out there itching to get a sneak peak at the initial wireframe of the webite, you can find the Adobe XD file (.xd) here: [Initial Website Wireframe](/FED_Tunify_wireframe.xd)
 
 ## Features
 
