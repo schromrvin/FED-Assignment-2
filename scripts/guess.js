@@ -1,7 +1,7 @@
 // Replace these values with your actual Spotify API credentials
 const clientId = '4adfe3f7169a4ac0a892439ea002f811';
 const clientSecret = '306c8c2bb0144ac28e1c2e1fa4b0d7f6';
-const playlistId = '3dbBF7CHMUwehGOwtdr2UY';
+const playlistId = '37i9dQZEVXbK4gjvS1FjPY';
 const clientSecretBase64 = btoa(`${clientId}:${clientSecret}`);
 
 let accessToken;
