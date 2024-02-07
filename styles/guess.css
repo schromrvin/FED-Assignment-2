@@ -222,17 +222,6 @@ button.disabled {
     transform: translate(0px, 4px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .animation-center {
     position: fixed;
     top: 50%;
@@ -241,4 +230,17 @@ button.disabled {
     z-index: -1;
     opacity: 0.5;
     filter: blur(40px);
+}
+
+/* MEDIA QUERIES
+--------------------------------*/
+@media (max-width: 500px) {
+    #options button {
+        width: 130px;
+        height: 130px;
+    }
+
+    .level {
+        width: 80%;
+    }
 }
