@@ -58,6 +58,23 @@ Here are some of the materials used in the development of the website.
 > [!NOTE]
 > [Microsoft Copilot AI Chatbot](https://copilot.microsoft.com/) was used in some instances to help with code development and testing.
 
+## Credits
+
+### API Implementation
+- Spotify Retrival (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
+- restdb.io Set-up (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
+
+### Pages
+- Login Page (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- Login Page (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
+- Home Page (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- Home Page (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- Guess The Song (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- Guess The Song (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527)) 
+- Guess The Song Results (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- Guess The Song Results (Back-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- Point Calculations (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+
 ## References
 
 ### Inspiration
@@ -65,7 +82,6 @@ Here are some of the materials used in the development of the website.
 - [Spellcheck](https://spellcheck.xyz/) (By [***@sabrina-api***](https://github.com/sabrina-aip) on [GitHub](https://github.com/sabrina-aip/spellcheck/tree/main))
 
 ### Content
-- Website Front-end (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
-- Website Back-end (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
 - Website Theme Visualizer ([***Realtime Colors***](https://www.realtimecolors.com/?colors=e2effb-030c15-89c2ef-421494-a528e1&fonts=Gotham-Poppins))
 - Icons ([***IconFinder***](https://www.iconfinder.com/))
+- Lottie Animations ([***LottieFiles***](https://lottiefiles.com/featured))
