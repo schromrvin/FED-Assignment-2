@@ -65,7 +65,7 @@ Here are some of the materials used in the development of the website.
 
 ### API Implementation
 - Spotify Retrival (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
-- restdb.io Set-up (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527) & ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
+- restdb.io Set-up (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 
 ### Pages
 - Login Page (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
