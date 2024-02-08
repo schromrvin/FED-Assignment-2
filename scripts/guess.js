@@ -195,31 +195,31 @@ $(document).ready(function() {
       $('.level h2').text('Level One: Easy');
       if (questionsPlayed == 4) {
         $('#nextButton').css('display', 'none');
-        $('#nextButton').text('Go Next Level ☝️');
+        $('#nextButton').text('Go next level ☝️');
       }
       else {
         $('#nextButton').css('display', 'none');
-        $('#nextButton').text('Next Tune 🎵');
+        $('#nextButton').text('Next tune 🎵');
       }
     } else if (levelsPlayed == 1) {
       $('.level h2').text('Level Two: Medium');
       if (questionsPlayed == 4) {
         $('#nextButton').css('display', 'none');
-        $('#nextButton').text('Go Next Level ☝️');
+        $('#nextButton').text('Go next level ☝️');
       }
       else {
         $('#nextButton').css('display', 'none');
-        $('#nextButton').text('Next Tune 🎵');
+        $('#nextButton').text('Next tune 🎵');
       }
     } else if (levelsPlayed == 2) {
       $('.level h2').text('Level Three: Hard');
       if (questionsPlayed == 4) {
         $('#nextButton').css('display', 'none');
-        $('#nextButton').text('Go To Results 📄');
+        $('#nextButton').text('Go to results 📄');
       }
       else {
         $('#nextButton').css('display', 'none');
-        $('#nextButton').text('Next Tune 🎵');
+        $('#nextButton').text('Next tune 🎵');
       }
     }
     else if (levelsPlayed == 3) {
