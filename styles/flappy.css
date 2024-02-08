@@ -1,0 +1,77 @@
+html {
+    background-color: #030C15;
+}
+
+.header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Gotham Header", sans-serif;
+}
+
+.back-btn{
+    position: absolute;
+    font-size: 35px;
+}
+
+.back-btn button {
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #a881ec;
+    border: none;
+    box-shadow: 0px 4px 0px rgb(0, 0, 0, 1);
+    transition: all 0.3s ease;
+}
+
+.back-btn button:hover {
+    background-color: #A528E1;
+    box-shadow: none;
+    transform: translate(0px, 4px);
+}
+
+.header h1 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    color: #a881ec;
+    font-size: 50px;
+}
+
+.title {
+    box-sizing: border-box;
+    padding: 1px;
+    background-color: #421494;
+    color: #dac4fff8;
+    border-radius: 20px;
+    font-family: "Gotham Header", sans-serif;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#bird {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 1);
+    margin-bottom: 30px;
+}
+
+/* MEDIA QUERIES
+--------------------------------*/
+@media (max-width: 500px) {
+    .title {
+        width: 80%;
+    }
+    
+    #bird {
+        width: 75%;
+        height: 135vw;
+    }
+}
