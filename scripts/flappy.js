@@ -1,3 +1,37 @@
+// Replace these values with your actual Spotify API credentials
+const clientId = '4adfe3f7169a4ac0a892439ea002f811';
+const clientSecret = '306c8c2bb0144ac28e1c2e1fa4b0d7f6';
+const playlistId = '3dbBF7CHMUwehGOwtdr2UY';
+const clientSecretBase64 = btoa(`${clientId}:${clientSecret}`);
+
+let accessToken;
+let currentTracks;
+
+// Authenticate with Spotify API
+function authenticate() {
+  return $.ajax({
+    url: 'https://accounts.spotify.com/api/token',
+    method: 'POST',
+    headers: {
+      'Authorization': 'Basic ' + btoa(clientId + ':' + clientSecret)
+    },
+    data: {
+      'grant_type': 'client_credentials'
+    }
+  });
+}
+
+// Get playlist tracks
+function getPlaylistTracks(accessToken) {
+  return $.ajax({
+    url: `https://api.spotify.com/v1/playlists/${playlistId}/tracks`,
+    method: 'GET',
+    headers: {
+      'Authorization': 'Bearer ' + accessToken
+    }
+  });
+}
+
 // SELECT CVS
 const cvs = document.getElementById("bird");
 const ctx = cvs.getContext("2d");
@@ -391,6 +425,85 @@ function loop() {
 
     // Call the loop function again after the desired delay
     setTimeout(loop, delay);
+    PlayTracksWithGame(currentTracks);
 }
 
 loop();
+
+function PlayTracksWithGame(tracks) {
+    currentTracks = tracks;
+    let randomIndex;
+    let randomTrack;
+  
+    do {
+        randomIndex = Math.floor(Math.random() * 51); // 0 to 50
+        randomTrack = tracks[randomIndex]?.track;
+    } while (!randomTrack);
+
+    // Remove the selected track from the array
+    tracks.splice(randomIndex, 1);
+
+    // Also remove the selected track from the currentTracks array
+    currentTracks = currentTracks.filter(track => track.track.id !== randomTrack.id);
+
+    // Fetch additional details of the selected track including album details
+    $.ajax({
+        url: `https://api.spotify.com/v1/tracks/${randomTrack.id}`,
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer ' + accessToken
+        },
+        success: function(response) {
+            const trackUrl = response.preview_url; // Use the preview URL for audio player
+
+            // If the track doesn't have a preview URL, select a different track
+            if (!trackUrl) {
+                PlayTracksWithGame(tracks);
+                return;
+            }
+
+            // Start playing the track
+            const audio = new Audio(trackUrl);
+            audio.play();
+
+            // Save the correct artist
+            const correctArtist = randomTrack.artists[0].name;
+
+            // Pause the game and music after 25 seconds, and prompt the user
+            setTimeout(function() {
+                // Pause the game
+                state.current = state.getReady;
+
+                // Pause the music
+                audio.pause();
+
+                // Prompt the user
+                state.artistGuess = prompt("Who is the artist of the song?");
+                
+                // Check the user's answer after 15 seconds
+                setTimeout(function() {
+                    if (state.artistGuess.toLowerCase() === correctArtist.toLowerCase()) {
+                        // Correct answer: resume the game, add 10 to the score, and start the cycle again
+                        state.current = state.game;
+                        score.value += 10;
+                        PlayTracksWithGame(currentTracks);
+                    } else {
+                        // Incorrect answer: end the game
+                        state.current = state.over;
+                        DIE.play();
+                    }
+                }, 15000); // 15 seconds
+            }, 25000); // 25 seconds
+        }
+    });
+}
+
+$(document).ready(function() {
+    authenticate().then(response => {
+      accessToken = response.access_token;
+      getPlaylistTracks(accessToken).then(response => {
+        const tracks = response.items;
+        PlayTracksWithGame(tracks);
+      });
+    });
+});
