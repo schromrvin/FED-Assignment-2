@@ -3,11 +3,22 @@ document.getElementById('btn-submit').addEventListener('click', function(event) 
   
     var points = 0;
     var daystreak = 1;
+    var base64data = null;
   
     var reader = new FileReader();
     reader.onloadend = function() {
-        var base64data = reader.result;
-        
+        base64data = reader.result;
+        submitForm();
+    }
+
+    var file = $('#profile-pic')[0].files[0];
+    if (file) {
+        reader.readAsDataURL(file);
+    } else {
+        submitForm();
+    }
+
+    function submitForm() {
         var data = {
             'name': $('#username').val(),
             'password': $('#password').val(),
@@ -31,13 +42,12 @@ document.getElementById('btn-submit').addEventListener('click', function(event) 
         }
       
         $.ajax(settings).done(function (response) {
-            alert('Data successfully posted to the API');
-            console.log(response);
+            alert('Account has successfully created! You will now be redirected to the login page.');
+            window.location.href = 'index.html';
         }).fail(function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ', ' + errorThrown);
+            alert('An error occurred while creating your account. Please try again.');
             console.error('Error: ' + textStatus + ', ' + errorThrown);
             console.error('Response: ' + jqXHR.responseText);
         });
     }
-    reader.readAsDataURL($('#profile-pic')[0].files[0]);
 });
