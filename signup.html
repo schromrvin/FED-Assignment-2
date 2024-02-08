@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="styles/login.css">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://tunify-4f5a.restdb.io/assets/js/eventsource.min.js"></script>
+    <script src="https://tunify-4f5a.restdb.io/rest/_jsapi.js"></script>
     <script>
         function displayImage(event) {
             // Get the file from the input element
@@ -42,7 +45,7 @@
         </div>
     </div>
     <div class="form-container">
-        <form id="login-form">
+        <form id="signup-form">
             <div id="title">SIGN UP</div>
             <label for="username">Username</label>
             <input class="input-box" id="username" type="text" name="username" placeholder="Username" required>
@@ -52,12 +55,12 @@
             <div class="pfp-container">
                 <label for="profile-pic">Profile Picture</label>
                 <img id="profile-pic-preview" src="" alt="Profile Picture Preview" style="display: none;">
-                <input style="display: none;" class="input-box" id="profile-pic" type="file" name="profile-pic" onchange="displayImage(event)">
+                <input style="display: none;" class="input-box" id="profile-pic" type="file" name="profile-pic" onchange="displayImage(event)" accept="image/*">
                 <label for="profile-pic" class="custom-file-upload">
                     Choose file 📁
                 </label>
             </div>
-            <button type="submit">
+            <button type="submit" id="btn-submit">
                 SIGN UP ➡️
             </button>
         </form>
