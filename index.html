@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="styles/login.css">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://tunify-4f5a.restdb.io/assets/js/eventsource.min.js"></script>
+    <script src="https://tunify-4f5a.restdb.io/rest/_jsapi.js"></script>
 </head>
 <body>
     <h1>Tunify</h1>
@@ -27,7 +30,7 @@
             <input class="input-box" id="password" type="password" name="password" placeholder="Password" required>
             <p><a href="#">Forgot your password?</a></p>
     
-            <button type="submit">
+            <button type="submit" id="btn-submit">
                 LOGIN ➡️
             </button>
         </form>
@@ -36,41 +39,6 @@
         Don't have an account? <br>
         <a href="signup.html">Sign up</a> or play as a <a href="home.html">Guest➡️</a>!
     </p>
-    <script>
-        const APIKEY = "65c0fe7573f36e9e5400b51a";
-
-        document.getElementById("login-form").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            let username = document.getElementById("username").value;
-            let password = document.getElementById("password").value;
-
-            let jsondata = {
-                "username": username,
-                "password": password
-            };
-
-            let settings = {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "x-apikey": APIKEY,
-                    "Cache-Control": "no-cache"
-                },
-                body: JSON.stringify(jsondata),
-                beforeSend: function () {
-                    // Optionally, you can add loading indicator or disable the submit button here
-                }
-            };
-
-            fetch("https://tunify-4f5a.restdb.io/rest/player", settings)
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                    // Optionally, you can handle the response here (e.g., redirect to another page)
-                });
-        });
-    </script>
     <script src="scripts/login.js"></script>
 </body>
 </html>
