@@ -378,11 +378,19 @@ function update(){
 }
 
 // LOOP
-function loop(){
+// Desired frames per second
+const fps = 120;
+
+// Calculate the delay needed for the desired frame rate
+const delay = 1000 / fps;
+
+function loop() {
     update();
     draw();
     frames++;
-    
-    requestAnimationFrame(loop);
+
+    // Call the loop function again after the desired delay
+    setTimeout(loop, delay);
 }
+
 loop();
