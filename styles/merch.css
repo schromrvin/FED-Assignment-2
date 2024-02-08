@@ -1,0 +1,123 @@
+html {
+    background-color: #030C15;
+    font-family: Poppins, sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+    color: #a881ec;
+    text-align: center;
+    font-family: "Gotham Header", sans-serif;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: #89C2EF;
+    text-align: center;
+    font-family: "Gotham Text", sans-serif;
+    margin-bottom: 40px;
+}
+
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E2EFFB;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    color: #E2EFFB;
+}
+
+
+.animation-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(9px);
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.animation-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.product {
+    width: 300px;
+    background-color: #421494;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #a881ec;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #A528E1;
+}
+
+
+/* MEDIA QUERIES
+--------------------------------*/
+@media (max-width: 500px) {
+    html {
+        font-size: 14px;
+    }
+    form {
+        width: 65%;
+    }
+}
