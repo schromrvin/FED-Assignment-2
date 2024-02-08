@@ -33,7 +33,7 @@ With the website being a work in progress, you might come across minor bugs and 
 - Sign Up Page (Front-end & Back-end)
 - Leaderboard Page (Front-end)
 - Merch Store (Front-end)
-- "Flappy Artists" Gamemode (Front-end & Javascript)
+- "Flappy Artists" Gamemode (Front-end & JavaScript)
 
 ### Features to Implement
 - Database Accounts API Implementation (Back-end)
@@ -81,7 +81,7 @@ Here are some of the materials used in the development of the website.
 - Sign Up Page (Back-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527) & ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
 - Leaderboard Page (Front-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
 - Merch Page (Front-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
-- "Flappy Artists" Gamemode (Front-end & Javascript) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- "Flappy Artists" Gamemode (Front-end & JavaScript) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 
 ### Others
 - Point Calculations (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
@@ -93,6 +93,7 @@ Here are some of the materials used in the development of the website.
 ### Inspiration
 - [SongGuessr](https://songuessr.naithcots.ovh/) (By ***SebLit*** on [Reddit](https://www.reddit.com/r/webdev/comments/15itrf7/showoff_saturday_songguessr_turn_your_spotify/))
 - [Spellcheck](https://spellcheck.xyz/) (By [***@sabrina-api***](https://github.com/sabrina-aip) on [GitHub](https://github.com/sabrina-aip/spellcheck/tree/main))
+- [Flappy Bird JavaScript Clone](https://www.youtube.com/watch?v=0ArCFchlTq4&t=4433s&ab_channel=CodeExplained) (By [***@CodeExplainedRepo***](https://github.com/CodeExplainedRepo) on [GitHub](https://github.com/CodeExplainedRepo/Original-Flappy-bird-JavaScript))
 
 ### Content
 - Website Theme Visualizer ([***Realtime Colors***](https://www.realtimecolors.com/?colors=e2effb-030c15-89c2ef-421494-a528e1&fonts=Gotham-Poppins))
