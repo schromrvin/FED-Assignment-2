@@ -84,7 +84,7 @@ Here are some of the materials used in the development of the website.
 - "Flappy Artists" Gamemode (Front-end & JavaScript) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 
 ### Others
-- Point Calculations (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- "Guess The Song" Score Calculation (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 - README Write-up (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 - Wireframe (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 
