@@ -31,14 +31,17 @@ With the website being a work in progress, you might come across minor bugs and 
 - Somewhat Responsive Website
 - Minor JavaScript Implementation (Hover Animations etc.)
 - Sign Up Page (Front-end & Back-end)
+- Leaderboard Page (Front-end)
+- Merch Store (Front-end)
+- "Flappy Artists" Gamemode (Front-end & Javascript)
 
 ### Features to Implement
 - Database Accounts API Implementation (Back-end)
 - Login Page (Back-end)
-- Anything Account Related
-- Leaderboard Page (Front-end & Back-end)
-- Merch Store Page (Front-end & Back-end)
-- **"Flappy Artists" Gamemode (Front-end & Back-end)**
+- Anything Account Related (Back-end)
+- Leaderboard Page (Back-end)
+- Merch Store Page (Back-end)
+- **"Flappy Artists" Gamemode (Back-end APIs)**
 <br>
 
 > Last updated on 8/2/2024
@@ -76,6 +79,9 @@ Here are some of the materials used in the development of the website.
 - "Guess The Song" Results (Back-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 - Sign Up Page (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 - Sign Up Page (Back-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527) & ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
+- Leaderboard Page (Front-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
+- Merch Page (Front-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
+- "Flappy Artists" Gamemode (Front-end & Javascript) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 
 ### Others
 - Point Calculations (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
