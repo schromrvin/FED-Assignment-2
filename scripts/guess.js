@@ -170,7 +170,7 @@ function newGame() {
     questionsPlayed = 0;
     levelsPlayed++;
     for (let i = 0; i < 5; i++) {
-      $('#tune-' + i + ' img').attr('src', 'images/guess/play.png');
+      $('#tune-' + i + ' img').attr('src', 'images/guess/music.png');
       $('#tune-' + i).css('background-color', 'rgb(165, 40, 225, 0.8)');
     }
   }
@@ -182,7 +182,7 @@ $(document).ready(function() {
     getPlaylistTracks(accessToken).then(response => {
       $('.level h2').text('Level One: Easy');
       for (let i = 0; i < 5; i++) {
-        $('#tune-' + i + ' img').attr('src', 'images/guess/play.png');
+        $('#tune-' + i + ' img').attr('src', 'images/guess/music.png');
         $('#tune-' + i).css('background-color', 'rgb(165, 40, 225, 0.8)');
       }
       displayTracksWithGame(response.items); // Display playlist tracks with guessing game
