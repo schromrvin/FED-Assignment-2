@@ -34,6 +34,8 @@ With the website being a work in progress, you might come across minor bugs and 
 
 ### Features to Implement
 - Database Accounts API Implementation (Back-end)
+- Login Page (Back-end)
+- Anything Account Related
 - Leaderboard Page (Front-end & Back-end)
 - Merch Store Page (Front-end & Back-end)
 - **"Flappy Artists" Gamemode (Front-end & Back-end)**
@@ -63,13 +65,11 @@ Here are some of the materials used in the development of the website.
 
 ### API Implementation
 - Spotify Retrival (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
-- restdb.io Set-up (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- restdb.io Set-up (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527) & ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
 
 ### Pages
 - Login Page (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
-- Login Page (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
 - Home Page (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
-- Home Page (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 - "Guess The Song" Gamemode (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 - "Guess The Song" Gamemode (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527)) 
 - "Guess The Song" Results (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
