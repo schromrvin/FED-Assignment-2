@@ -30,15 +30,18 @@ With the website being a work in progress, you might come across minor bugs and 
 - "Guess The Song" Results (Front-end & Back-end)
 - Somewhat Responsive Website
 - Minor JavaScript Implementation (Hover Animations etc.)
+- Sign Up Page (Front-end & Back-end)
 
 ### Features to Implement
 - Database Accounts API Implementation (Back-end)
+- Login Page (Back-end)
+- Anything Account Related
 - Leaderboard Page (Front-end & Back-end)
 - Merch Store Page (Front-end & Back-end)
 - **"Flappy Artists" Gamemode (Front-end & Back-end)**
 <br>
 
-> Last updated on 7/2/2024
+> Last updated on 8/2/2024
 
 ### Possible Features
 - Ability to store tracks for a future "Practice Mode"
@@ -62,17 +65,17 @@ Here are some of the materials used in the development of the website.
 
 ### API Implementation
 - Spotify Retrival (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
-- restdb.io Set-up (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
+- restdb.io Set-up (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 
 ### Pages
 - Login Page (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
-- Login Page (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
 - Home Page (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
-- Home Page (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 - "Guess The Song" Gamemode (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 - "Guess The Song" Gamemode (Back-end) (By ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh) & ***Marvin -*** [***@s10260527***](https://github.com/s10260527)) 
 - "Guess The Song" Results (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
 - "Guess The Song" Results (Back-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- Sign Up Page (Front-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
+- Sign Up Page (Back-end) (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527) & ***Lucas -*** [***@LoocasToh***](https://github.com/LoocasToh))
 
 ### Others
 - Point Calculations (By ***Marvin -*** [***@s10260527***](https://github.com/s10260527))
